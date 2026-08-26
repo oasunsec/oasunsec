@@ -1,6 +1,6 @@
 # Security Operations | Incident Response | Detection Engineering
 
-Cybersecurity professional focused on security monitoring, incident response, detection engineering, and Microsoft cloud security.
+Cybersecurity professional focused on monitoring, incident response, detection engineering, and Microsoft cloud security.
 
 GIAC GCIH | GIAC GSEC | CompTIA Security+
 
