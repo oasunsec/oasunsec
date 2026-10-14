@@ -25,6 +25,15 @@ Decoy Word and HTML files that call home when opened. The receiver runs on Azure
 * Redacted evidence from opening the decoy in Word to the Sentinel incident
 * Cost notes and teardown steps
 
+### [Azure Data Exfiltration Defense Lab](https://github.com/oasunsec/azure-data-exfiltration-defense-lab)
+
+A synthetic financial file in Azure Blob Storage and SharePoint, and the controls meant to keep it from leaving, each tested with a real request.
+
+* Storage auth and IP firewall, scoped RBAC and Azure Policy, deployed with Bicep
+* Conditional Access MFA and a Sentinel detection for denied writes
+* Purview DLP with a custom classifier that blocked an external guest
+* KQL investigation, redacted evidence and a full teardown record
+
 ### [Cybersecurity Portfolio](https://github.com/oasunsec/cybersecurity-portfolio)
 
 Four lab write-ups with the raw artifacts kept:
