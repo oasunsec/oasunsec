@@ -1,64 +1,53 @@
 # Security Operations | Incident Response | Detection Engineering
 
-Cybersecurity professional focused on monitoring, incident response, detection engineering, and Microsoft cloud security.
+I work on monitoring, incident response, and detection engineering, mostly on Windows endpoints and Microsoft cloud.
 
 GIAC GCIH | GIAC GSEC | CompTIA Security+
 
-## Featured Work
+## Projects
 
-### Triage Engine
+### [Triage Engine](https://github.com/oasunsec/triage-engine)
 
-Windows endpoint investigation platform for turning EVTX and live telemetry into analyst-ready findings and incidents.
+Takes Windows EVTX files or live collection and turns them into findings, incidents, timelines, and an HTML case report.
 
-* Behavioral and Sigma-based detections
-* Sysmon and Windows event analysis
-* Detection tuning and alert correlation
-* MITRE ATT&CK mapping
-* Analyst review and disposition workflows
-* Timelines, incident briefs, and case reporting
+* Built-in behavioral detections plus optional Sigma rules
+* Sysmon and Windows Security event analysis, mapped to MITRE ATT&CK
+* Alerts grouped into findings and incidents, with tuning overrides
+* Review queue with owners, notes, and dispositions
 
-**Repository:** [Triage Engine](https://github.com/oasunsec/triage-engine)
+### [Honey Token Detection](https://github.com/oasunsec/honey-token-detection)
 
-### Honey Token Detection
+Decoy Word and HTML files that call home when opened. The receiver runs on Azure Container Apps and sends events to Microsoft Sentinel.
 
-Document honeytokens deployed on Azure, with alerts flowing into Microsoft Sentinel and a tested Word-to-incident path.
-
-* FastAPI callback receiver on Azure Container Apps, deployed with Bicep
-* Azure Monitor ingestion and severity-aware Sentinel analytics rules
-* KQL hunting queries and incident triage
-* Redacted end-to-end evidence, from opening the decoy to a Sentinel incident
+* FastAPI receiver deployed with Bicep
+* Separate Sentinel rules for first hits, scanner-like requests, and repeats
+* KQL hunting queries
+* Redacted evidence from opening the decoy in Word to the Sentinel incident
 * Cost notes and teardown steps
 
-**Repository:** [Honey Token Detection](https://github.com/oasunsec/honey-token-detection)
+### [Cybersecurity Portfolio](https://github.com/oasunsec/cybersecurity-portfolio)
 
-### Cybersecurity Portfolio
+Four lab write-ups with the raw artifacts kept:
 
-Hands-on security investigations and detection engineering work covering:
+* PCAP investigation where I decoded the exfiltrated data and recovered a stolen API key
+* Vulnerability scan where I separated real findings from scanner noise and fixed them behind a reverse proxy
+* SQL injection login bypass with saved requests and a retest
+* RDP detection rule and the reasoning behind keeping it
 
-* SOC network investigations
-* Detection development and tuning
-* IOC extraction and ATT&CK mapping
-* Vulnerability validation
-* Incident documentation
+### [ShareSafe](https://github.com/oasunsec/share-safe)
 
-**Repository:** [Cybersecurity Portfolio](https://github.com/oasunsec/cybersecurity-portfolio)
+A single-page browser tool that finds and redacts secrets, email addresses, and personal file paths before you paste logs into a ticket or public issue. Nothing leaves the browser.
 
-### ShareSafe
-
-A local browser tool that finds and redacts secrets, email addresses and personal file paths before you paste logs into a ticket or public issue.
-
-**Repository:** [ShareSafe](https://github.com/oasunsec/share-safe)
-
-## Current Focus
+## Currently working on
 
 * Microsoft Sentinel and KQL
 * Azure and Microsoft Entra ID security
 * Defender for Cloud
 * Incident response playbooks
-* Detection tuning and security automation
+* Detection tuning and automation
 * Threat intelligence enrichment
 
-## Core Technologies
+## Tools
 
 **SIEM & Detection:** Microsoft Sentinel, Splunk, Elastic, KQL, Sigma, Sysmon
 
@@ -69,7 +58,3 @@ A local browser tool that finds and redacts secrets, email addresses and persona
 **Automation:** Python, PowerShell, REST APIs
 
 **Network:** Wireshark, Zeek, Snort
-
----
-
-Building practical security projects focused on turning telemetry into actionable investigations.
