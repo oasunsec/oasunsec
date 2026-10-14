@@ -36,7 +36,7 @@ Four lab write-ups with the raw artifacts kept:
 
 ### [ShareSafe](https://github.com/oasunsec/share-safe)
 
-A single-page browser tool that finds and redacts secrets, email addresses, and personal file paths before you paste logs into a ticket or public issue. Nothing leaves the browser.
+A single-page browser tool that finds and redacts secrets, email addresses, and personal file paths before you paste logs into a ticket or public issue. Nothing leaves the browser. [Try it](https://oasunsec.github.io/share-safe/).
 
 ## Currently working on
 
