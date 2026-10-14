@@ -19,6 +19,18 @@ Windows endpoint investigation platform for turning EVTX and live telemetry into
 
 **Repository:** [Triage Engine](https://github.com/oasunsec/triage-engine)
 
+### Honey Token Detection
+
+Document honeytokens deployed on Azure, with alerts flowing into Microsoft Sentinel and a tested Word-to-incident path.
+
+* FastAPI callback receiver on Azure Container Apps, deployed with Bicep
+* Azure Monitor ingestion and severity-aware Sentinel analytics rules
+* KQL hunting queries and incident triage
+* Redacted end-to-end evidence, from opening the decoy to a Sentinel incident
+* Cost notes and teardown steps
+
+**Repository:** [Honey Token Detection](https://github.com/oasunsec/honey-token-detection)
+
 ### Cybersecurity Portfolio
 
 Hands-on security investigations and detection engineering work covering:
@@ -30,6 +42,12 @@ Hands-on security investigations and detection engineering work covering:
 * Incident documentation
 
 **Repository:** [Cybersecurity Portfolio](https://github.com/oasunsec/cybersecurity-portfolio)
+
+### ShareSafe
+
+A local browser tool that finds and redacts secrets, email addresses and personal file paths before you paste logs into a ticket or public issue.
+
+**Repository:** [ShareSafe](https://github.com/oasunsec/share-safe)
 
 ## Current Focus
 
